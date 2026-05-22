@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+#panel {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.92);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  z-index: 1000;
+}
+
+#panel label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+#map-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: white;
+}
+
+#map-wrapper svg {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#panel {
+  font-size: 24px;
+  padding: 20px;
+}
+
+#panel input[type="checkbox"] {
+  transform: scale(1.6);
+  margin-right: 10px;
+}
+
+#zoom-panel {
+  position: fixed;
+  top: 260px;
+  left: 10px;
+  background: rgba(255,255,255,0.92);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  z-index: 1000;
+  font-size: 20px;
+}
+
+#zoom-slider {
+  width: 220px;
+}
