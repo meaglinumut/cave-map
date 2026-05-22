@@ -59,3 +59,22 @@ body {
 #zoom-slider {
   width: 120px;
 }
+
+#map-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: white;
+}
+
+#map-wrapper {
+  width: fit-content;
+  height: fit-content;
+  transform-origin: center center;
+}
+
+#map-wrapper svg {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
