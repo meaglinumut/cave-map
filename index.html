@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>BÜMAK Cave Map Database</title>
+
   <style>
     body {
-  margin: 0;
-  background: #d8d8d8;
-  background-image: url("eskiz.png");
-  background-repeat: repeat;
-  background-size: 1800px auto;
-  background-attachment: fixed;
-  color: #000;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+      margin: 0;
+      background-color: #d8d8d8;
+      background-image: url("eskiz.png"), url("mountains.png");
+      background-repeat: repeat, no-repeat;
+      background-size: 1800px auto, 100% auto;
+      background-position: top left, bottom center;
+      background-attachment: fixed, fixed;
+      color: #000;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
     .topbar {
-  background: #003366;
-  color: white;
-  padding: 8px 12px;
-  border-bottom: 3px solid #000;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+      background: #003366;
+      color: white;
+      padding: 8px 12px;
+      border-bottom: 3px solid #000;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
     .topbar h1 {
       margin: 0;
@@ -36,11 +38,11 @@
     }
 
     .container {
-  margin: 14px;
-  background: rgba(242, 242, 242, 0.88);
-  border: 1px solid #666;
-  padding: 12px;
-}
+      margin: 14px;
+      background: rgba(242, 242, 242, 0.88);
+      border: 1px solid #666;
+      padding: 12px;
+    }
 
     table {
       width: 100%;
@@ -77,113 +79,103 @@
       border-top: 1px solid #777;
       padding-top: 8px;
     }
+
     .top-logo {
-  height: 48px;
-  width: 48px;
-  object-fit: contain;
-}
+      height: 48px;
+      width: 48px;
+      object-fit: contain;
+    }
 
-.archive-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .archive-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.bat-gif {
-  height: 55px;
-  image-rendering: pixelated;
-}
+    .bat-gif {
+      height: 55px;
+      image-rendering: pixelated;
+    }
 
-.mountain-banner {
-  width: 100%;
-  overflow: hidden;
-  border-top: 3px solid #d8d8d8;
-  background: #d8d8d8;
-  margin-top: auto;
-}
-
-.mountain-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .spacer {
+      flex: 1;
+      min-height: 220px;
+    }
   </style>
 </head>
 
 <body>
 
-<div class="topbar">
-  <img src="bumak-logo.png" class="top-logo" alt="BÜMAK logo">
-  <div>
-    <h1>BÜMAK İnteraktif Mağara Haritaları Veritabanı</h1>
-    <div>Boğaziçi Üniversitesi Mağara Araştırma Kulübü | Harita Arşivi</div>
-  </div>
-</div>
-
-<div class="container">
-
-<div class="archive-header">
-  <h2>Harita Kayıtları</h2>
-  <img src="bat.gif" class="bat-gif" alt="uçan yarasa">
-</div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Mağara</th>
-        <th>Bölge</th>
-        <th>Derinlik</th>
-        <th>Harita</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Sukırıldığı 1 Düdeni</td>
-        <td>Taşeli Platosu</td>
-        <td>-228 m</td>
-        <td><a href="sukirildigi.html">Aç</a></td>
-      </tr>
-
-      <tr>
-        <td>Yukarı Katırgölleri Düdeni</td>
-        <td>Munzur Dağları</td>
-        <td>Veri hazırlanıyor</td>
-        <td><a href="#">Beklemede</a></td>
-      </tr>
-
-      <tr>
-        <td>Pınargözü Mağarası</td>
-        <td>Dedegöl Dağı</td>
-        <td>Veri hazırlanıyor</td>
-        <td><a href="#">Beklemede</a></td>
-      </tr>
-
-      <tr>
-        <td>Gidilmez Mağarası</td>
-        <td>Taşeli Platosu</td>
-        <td>Veri hazırlanıyor</td>
-        <td><a href="#">Beklemede</a></td>
-      </tr>
-
-      <tr>
-        <td>Derme 2 Düdeni</td>
-        <td>Burmahan</td>
-        <td>Veri hazırlanıyor</td>
-        <td><a href="#">Beklemede</a></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="footer">
-    Not: Katmanlı haritalarda döşeme, duvarlar, yazılar, ölçek çizgileri ve yüzey oturtmaları ayrı ayrı açılıp kapatılabilir.
+  <div class="topbar">
+    <img src="bumak-logo.png" class="top-logo" alt="BÜMAK logo">
+    <div>
+      <h1>BÜMAK İnteraktif Mağara Haritaları Veritabanı</h1>
+      <div>Boğaziçi Üniversitesi Mağara Araştırma Kulübü | Harita Arşivi</div>
+    </div>
   </div>
 
-</div>
-  
-<div class="mountain-banner">
-  <img src="mountains.png" alt="dağ panoraması">
-</div>
-  
+  <div class="container">
+
+    <div class="archive-header">
+      <h2>Harita Kayıtları</h2>
+      <img src="bat.gif" class="bat-gif" alt="uçan yarasa">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Mağara</th>
+          <th>Bölge</th>
+          <th>Derinlik</th>
+          <th>Harita</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Sukırıldığı 1 Düdeni</td>
+          <td>Taşeli Platosu</td>
+          <td>-228 m</td>
+          <td><a href="sukirildigi.html">Aç</a></td>
+        </tr>
+
+        <tr>
+          <td>Yukarı Katırgölleri Düdeni</td>
+          <td>Munzur Dağları</td>
+          <td>Veri hazırlanıyor</td>
+          <td><a href="#">Beklemede</a></td>
+        </tr>
+
+        <tr>
+          <td>Pınargözü Mağarası</td>
+          <td>Dedegöl Dağı</td>
+          <td>Veri hazırlanıyor</td>
+          <td><a href="#">Beklemede</a></td>
+        </tr>
+
+        <tr>
+          <td>Gidilmez Mağarası</td>
+          <td>Taşeli Platosu</td>
+          <td>Veri hazırlanıyor</td>
+          <td><a href="#">Beklemede</a></td>
+        </tr>
+
+        <tr>
+          <td>Derme 2 Düdeni</td>
+          <td>Burmahan</td>
+          <td>Veri hazırlanıyor</td>
+          <td><a href="#">Beklemede</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      Not: Katmanlı haritalarda döşeme, duvarlar, yazılar, ölçek çizgileri ve yüzey oturtmaları ayrı ayrı açılıp kapatılabilir.
+    </div>
+
+  </div>
+
+  <div class="spacer"></div>
+
 </body>
 </html>
