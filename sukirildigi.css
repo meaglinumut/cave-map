@@ -3,15 +3,35 @@ body {
   font-family: Arial, sans-serif;
   background: white;
 }
-
-#panel {
+#back-button {
   position: fixed;
   top: 10px;
   left: 10px;
-  background: rgba(255,255,255,0.92);
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
+  background: #003366;
+  color: white;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 2px solid #000;
+  z-index: 1001;
+}
+
+#back-button:hover {
+  background: #005599;
+}
+
+#panel {
+  position: fixed;
+  top: 58px;
+  left: 10px;
+  background: #f2f2f2;
+  color: #000;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #666;
   z-index: 1000;
 }
 
@@ -20,41 +40,24 @@ body {
   margin-bottom: 6px;
 }
 
-#map-container {
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background: white;
-}
-
-#map-wrapper svg {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-}
-
-#panel {
-  font-size: 24px;
-  padding: 20px;
-}
-
 #panel input[type="checkbox"] {
-  transform: scale(1.6);
-  margin-right: 10px;
+  transform: scale(1.1);
+  margin-right: 6px;
 }
 
 #zoom-panel {
   position: fixed;
-  top: 320px;
-  left: 12px;
-  background: rgba(255,255,255,0.92);
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
+  top: 250px;
+  left: 10px;
+  background: #f2f2f2;
+  color: #000;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #666;
   z-index: 1000;
-  font-size: 18px;
 }
 
 #zoom-slider {
-  width: 140px;
+  width: 130px;
 }
