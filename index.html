@@ -8,11 +8,10 @@
     body {
       margin: 0;
       background-color: #d8d8d8;
-      background-image: url("eskiz.png"), url("mountains.png");
-      background-repeat: repeat, no-repeat;
-      background-size: 1800px auto, 100% auto;
-      background-position: top left, bottom center;
-      background-attachment: fixed, fixed;
+      background-image: url("eskiz.png");
+      background-repeat: repeat;
+      background-size: 1800px auto;
+      background-attachment: fixed;
       color: #000;
       font-family: "Courier New", monospace;
       font-size: 14px;
@@ -37,11 +36,28 @@
       letter-spacing: 1px;
     }
 
+    .top-logo {
+      height: 48px;
+      width: 48px;
+      object-fit: contain;
+    }
+
     .container {
       margin: 14px;
       background: rgba(242, 242, 242, 0.88);
       border: 1px solid #666;
       padding: 12px;
+    }
+
+    .archive-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .bat-gif {
+      height: 55px;
+      image-rendering: pixelated;
     }
 
     table {
@@ -80,26 +96,22 @@
       padding-top: 8px;
     }
 
-    .top-logo {
-      height: 48px;
-      width: 48px;
-      object-fit: contain;
-    }
-
-    .archive-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .bat-gif {
-      height: 55px;
-      image-rendering: pixelated;
-    }
-
     .spacer {
       flex: 1;
-      min-height: 220px;
+      min-height: 140px;
+    }
+
+    .mountain-banner {
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      margin-top: auto;
+    }
+
+    .mountain-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
@@ -176,6 +188,10 @@
   </div>
 
   <div class="spacer"></div>
+
+  <div class="mountain-banner">
+    <img src="mountains.png" alt="dağ panoraması">
+  </div>
 
 </body>
 </html>
