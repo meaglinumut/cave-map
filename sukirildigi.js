@@ -18,8 +18,10 @@ const zoomValue = document.getElementById("zoom-value");
 const mapContainer = document.getElementById("map-container");
 const mapWrapper = document.getElementById("map-wrapper");
 
+mapWrapper.dataset.zoom = 1;
+
 zoomSlider.addEventListener("input", () => {
-  const oldZoom = Number(mapWrapper.dataset.zoom || 1);
+  const oldZoom = Number(mapWrapper.dataset.zoom);
   const newZoom = Number(zoomSlider.value) / 100;
 
   const centerX = mapContainer.scrollLeft + mapContainer.clientWidth / 2;
@@ -30,10 +32,10 @@ zoomSlider.addEventListener("input", () => {
 
   mapWrapper.style.transform = `scale(${newZoom})`;
   mapWrapper.style.transformOrigin = "top left";
-  mapWrapper.dataset.zoom = newZoom;
 
   mapContainer.scrollLeft = mapX * newZoom - mapContainer.clientWidth / 2;
   mapContainer.scrollTop = mapY * newZoom - mapContainer.clientHeight / 2;
 
+  mapWrapper.dataset.zoom = newZoom;
   zoomValue.textContent = Math.round(newZoom * 100) + "%";
 });
