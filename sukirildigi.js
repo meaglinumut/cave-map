@@ -1,4 +1,4 @@
-fetch("map.svg")
+fetch("sukirildigi.svg")
   .then(response => response.text())
   .then(svgText => {
     document.getElementById("map-wrapper").innerHTML = svgText;
