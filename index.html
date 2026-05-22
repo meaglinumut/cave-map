@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>BÜMAK Cave Map Database</title>
+  <style>
+    body {
+      margin: 0;
+      background: #d8d8d8;
+      color: #000;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+
+    .topbar {
+      background: #003366;
+      color: white;
+      padding: 8px 12px;
+      border-bottom: 3px solid #000;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      margin: 14px;
+      background: #f2f2f2;
+      border: 1px solid #666;
+      padding: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th {
+      background: #003366;
+      color: white;
+      text-align: left;
+      padding: 6px;
+      border: 1px solid #000;
+    }
+
+    td {
+      padding: 6px;
+      border: 1px solid #777;
+    }
+
+    tr:nth-child(even) {
+      background: #eeeeee;
+    }
+
+    a {
+      color: #0000aa;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #333;
+      border-top: 1px solid #777;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <h1>BÜMAK İnteraktif Mağara Haritaları Veritabanı</h1>
+  <div>Boğaziçi Üniversitesi Mağara Araştırma Kulübü | Harita Arşivi</div>
+</div>
+
+<div class="container">
+
+  <h2>Harita Kayıtları</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mağara</th>
+        <th>Bölge</th>
+        <th>Derinlik</th>
+        <th>Harita</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Sukırıldığı 1 Düdeni</td>
+        <td>Taşeli Platosu</td>
+        <td>-228 m</td>
+        <td><a href="sukirildigi.html">Aç</a></td>
+      </tr>
+
+      <tr>
+        <td>Yukarı Katırgölleri Düdeni</td>
+        <td>Munzur Dağları</td>
+        <td>Veri hazırlanıyor</td>
+        <td><a href="#">Beklemede</a></td>
+      </tr>
+
+      <tr>
+        <td>Pınargözü Mağarası</td>
+        <td>Dedegöl Dağı</td>
+        <td>Veri hazırlanıyor</td>
+        <td><a href="#">Beklemede</a></td>
+      </tr>
+
+      <tr>
+        <td>Gidilmez Mağarası</td>
+        <td>Taşeli Platosu</td>
+        <td>Veri hazırlanıyor</td>
+        <td><a href="#">Beklemede</a></td>
+      </tr>
+
+      <tr>
+        <td>Derme 2 Düdeni</td>
+        <td>Burmahan</td>
+        <td>Veri hazırlanıyor</td>
+        <td><a href="#">Beklemede</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Not: Katmanlı haritalarda döşeme, duvarlar, yazılar, ölçek çizgileri ve yüzey oturtmaları ayrı ayrı açılıp kapatılabilir.
+  </div>
+
+</div>
+
+</body>
+</html>
