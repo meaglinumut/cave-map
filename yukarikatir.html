@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cave Map</title>
+  <link rel="stylesheet" href="sukirildigi.css">
+</head>
+<body>
+
+<a id="back-button" href="index.html">← Ana Menü</a>
+  
+<div id="panel">
+  <label><input type="checkbox" checked data-layer="oturtma"> Oturtma</label>
+  <label><input type="checkbox" checked data-layer="Döşeme"> Döşeme</label>
+  <label><input type="checkbox" checked data-layer="yazilar"> Yazılar</label>
+  <label><input type="checkbox" checked data-layer="duvarlar"> Duvarlar</label>
+  <label><input type="checkbox" checked data-layer="sular"> Sular</label>
+  <label><input type="checkbox" checked data-layer="scales"> Scales</label>
+</div>
+
+<div id="zoom-panel">
+  <label for="zoom-slider">Zoom</label>
+  <input type="range" id="zoom-slider" min="50" max="500" value="100">
+  <span id="zoom-value">100%</span>
+</div>
+<div id="map-container">
+  <div id="map-wrapper"></div>
+</div>
+
+<script src="yukarikatir.js"></script>
+</body>
+</html>
